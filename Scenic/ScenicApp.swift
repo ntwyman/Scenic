@@ -9,9 +9,11 @@ import SwiftUI
 
 @main
 struct ScenicApp: App {
+    let model = ScenicModel(rangeX: -10...10, rangeY: -10...10)
+
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView().environment(model)
         }
     }
 }

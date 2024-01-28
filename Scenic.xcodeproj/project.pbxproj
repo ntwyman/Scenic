@@ -14,6 +14,8 @@
 		01215D2F2B5F4B4100C8B66C /* ScenicTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01215D2E2B5F4B4100C8B66C /* ScenicTests.swift */; };
 		01215D392B5F4B4100C8B66C /* ScenicUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01215D382B5F4B4100C8B66C /* ScenicUITests.swift */; };
 		01215D3B2B5F4B4100C8B66C /* ScenicUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01215D3A2B5F4B4100C8B66C /* ScenicUITestsLaunchTests.swift */; };
+		01CAB9CD2B6376DE00549DA6 /* ScenicModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01CAB9CC2B6376DE00549DA6 /* ScenicModel.swift */; };
+		01F0B2452B5F50470020C5CE /* SurfaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F0B2442B5F50460020C5CE /* SurfaceView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +47,8 @@
 		01215D342B5F4B4100C8B66C /* ScenicUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScenicUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		01215D382B5F4B4100C8B66C /* ScenicUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScenicUITests.swift; sourceTree = "<group>"; };
 		01215D3A2B5F4B4100C8B66C /* ScenicUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScenicUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		01CAB9CC2B6376DE00549DA6 /* ScenicModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScenicModel.swift; sourceTree = "<group>"; };
+		01F0B2442B5F50460020C5CE /* SurfaceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurfaceView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +104,8 @@
 				01215D202B5F4B4100C8B66C /* Assets.xcassets */,
 				01215D252B5F4B4100C8B66C /* Scenic.entitlements */,
 				01215D222B5F4B4100C8B66C /* Preview Content */,
+				01F0B2442B5F50460020C5CE /* SurfaceView.swift */,
+				01CAB9CC2B6376DE00549DA6 /* ScenicModel.swift */,
 			);
 			path = Scenic;
 			sourceTree = "<group>";
@@ -261,6 +267,8 @@
 			files = (
 				01215D1F2B5F4B4000C8B66C /* ContentView.swift in Sources */,
 				01215D1D2B5F4B4000C8B66C /* ScenicApp.swift in Sources */,
+				01CAB9CD2B6376DE00549DA6 /* ScenicModel.swift in Sources */,
+				01F0B2452B5F50470020C5CE /* SurfaceView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
