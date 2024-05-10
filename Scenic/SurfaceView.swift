@@ -73,10 +73,13 @@ func loadScene(_ model: ScenicModel) -> SCNScene {
     let mat1 = SCNMaterial()
     mat1.transparency = CGFloat(0.95)
     mat1.diffuse.contents = NSColor.red
+    mat1.metalness.contents = NSColor.red
     mat1.isDoubleSided = true
 
     let mat2 = SCNMaterial()
+    
     mat2.diffuse.contents = NSColor.blue
+    mat2.metalness.contents = NSColor.blue
     mat2.transparency = CGFloat(0.95)
     mat2.isDoubleSided = true
     geom.materials = [mat1, mat2]

@@ -22,16 +22,27 @@ typealias GridPoint = (z: Double, vel: Double)
         self.strideY = 1 + rangeY.upperBound - rangeY.lowerBound
         self.defaultValue = (0.0, 0.0)
         self.values = Array(repeating: defaultValue, count: strideY * (1 + rangeX.upperBound - rangeX.lowerBound))
-        
-        
-        let originIdx = index(x: 0, y:0)
-        self.values[originIdx] = (5.0, 0)
+        self.randomDrop()
         
         Timer.scheduledTimer(withTimeInterval: 0.25, repeats: true) { timer in
             self.iterate(timer: timer)
         }
+        
+        Timer.scheduledTimer(withTimeInterval: 17.0, repeats: true) { timer in
+            self.randomDrop()
+        }
+        
+        Timer.scheduledTimer(withTimeInterval: 91, repeats: true) { timer in
+            self.values = Array(repeating: self.defaultValue, count: self.strideY * (1 + rangeX.upperBound - rangeX.lowerBound))
+            self.randomDrop()
+        }
     }
-    
+    private func randomDrop() {
+        let xRand = Int.random(in: rangeX)
+        let yRand = Int.random(in: rangeY)
+        let idx = self.index(x: xRand, y: yRand)
+        self.values[idx] = (5.0, 0)
+    }
     private func index(x:Int, y: Int) -> Int {
         x - rangeX.lowerBound + (y - rangeY.lowerBound) * strideY
     }
